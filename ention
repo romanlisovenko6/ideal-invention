@@ -1,0 +1,13 @@
+            
+        case .switchEditMode:
+            newState.editMode.next()
+            
+        case .toggleGrid:
+            newState.isShowingGrid.toggle()
+            
+        case .togglePlayCollage:
+            newState.isPlayingCollage.toggle()
+        }
+        
+        return newState
+    }
